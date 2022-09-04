@@ -1,0 +1,16 @@
+CREATE TABLE mjoy_clothing (id INTEGER PRIMARY KEY, Top TEXT, Bottom TEXT, Size TEXT, Price INTEGER);
+
+INSERT INTO mjoy_clothing VALUES (1, 'Tank', 'Skirt', 'M', 120);
+INSERT INTO mjoy_clothing VALUES (2, 'Jackets', 'Pants', 'L', 150);
+INSERT INTO mjoy_clothing VALUES (3, 'Long Sleeve', 'Jogger', 'M', 140);
+INSERT INTO mjoy_clothing VALUES (4, 'Dress', 'Boxer', 'M', 99);
+INSERT INTO mjoy_clothing VALUES (5, 'Sando', 'Brief', 'S', 59);
+INSERT INTO mjoy_clothing VALUES (6, 'Hoodies', 'Short', 'M', 79);
+INSERT INTO mjoy_clothing VALUES (7, 'Leather Jacket', 'Kurdoroy', 'M', 180);
+INSERT INTO mjoy_clothing VALUES (8, 'Polo', 'Jeans', 'M', 199);
+INSERT INTO mjoy_clothing VALUES (9, 'Short Sleeve', 'Skinny Jeans', 'M', 180);
+INSERT INTO mjoy_clothing VALUES (10, 'Toxedo', 'Cargo Shorts', 'M', 170);
+
+SELECT * FROM mjoy_clothing ORDER BY TOP
+
+;SELECT Top, SUM(Price) FROM mjoy_clothing;
